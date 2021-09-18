@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/images/gallery/gallery-01-medium.jpg",
+        "thumbnail": "/assets/images/gallery/gallery-01-small.jpg",
+        "title": "Tarte Tatin"
+    },
+    {
+        "id": 2,
+        "image": "/assets/images/gallery/gallery-02-medium.jpg",
+        "thumbnail": "/assets/images/gallery/gallery-02-small.jpg",
+        "title": "Boeuf Bourguignon"
+    },
+    {
+        "id": 3,
+        "image": "/assets/images/gallery/gallery-03-medium.jpg",
+        "thumbnail": "/assets/images/gallery/gallery-03-small.jpg",
+        "title": "Moules Marinières"
+    },
+    {
+        "id": 4,
+        "image": "/assets/images/gallery/gallery-04-medium.jpg",
+        "thumbnail": "/assets/images/gallery/gallery-04-small.jpg",
+        "title": "Blanquette de Veau"
+    },
+    {
+        "id": 5,
+        "image": "/assets/images/gallery/gallery-05-medium.jpg",
+        "thumbnail": "/assets/images/gallery/gallery-05-small.jpg",
+        "title": "Steak Tartare"
+    },
+    {
+        "id": 6,
+        "image": "/assets/images/gallery/gallery-06-medium.jpg",
+        "thumbnail": "/assets/images/gallery/gallery-06-small.jpg",
+        "title": "Cassoulet"
+    }
+]

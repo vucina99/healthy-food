@@ -1,0 +1,39 @@
+<!-- Start All Pages -->
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Meals by category</h1>
+                <a href="/menu" class="btn btn-outline-success ml-auto mb-5"><i class="fa fa-arrow-left"></i>  Back to list of meals</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Pages -->
+
+<!-- Start Menu -->
+<div class="menu-box">
+    <div class="container">
+        <div class="row special-list">
+            <div *ngFor="let meal of categories" class="col-lg-4 col-md-6 special-grid drinks d-flex flex-row">
+                <div class="gallery-single fix">
+                    <img src="{{ meal.image }}" class="img-fluid" alt="{{ meal.name }}">
+                    <div class="why-text d-flex flex-column justify-content-center align-items-center">
+                       <a [routerLink]="['/menu', meal.id]"> <h4>{{ meal.name }} <span class="text-dark font-weight-bold" *ngIf="meal.isSpecial"> | Special Meal </span></h4></a>
+                        <p>{{ meal.description | cutText}}</p>
+
+                        <h5> {{ meal.price | currency: 'USD' : 'symbol' }} </h5>
+                        <a [routerLink]="['/menu', meal.id]" class="btn w-50 btn-outline-light btn-circle d-flex justify-content-center m-2" href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <a href="/menu" class="btn btn-outline-success ml-auto mb-5"><i class="fa fa-arrow-left"></i>  Back to list of meals</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Menu -->

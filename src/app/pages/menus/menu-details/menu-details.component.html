@@ -1,0 +1,38 @@
+  <main class="container-fluid">
+        <div class="container" *ngIf="meal;else no_meal" [@expand]>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="meal__details d-flex flex-column justify-content-center">
+                        <div class="d-flex justify-content-center meal__image">
+                            <img class="img-fluid" src="{{ meal.image }}" alt="{{  meal.name }}">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h1>{{ meal.name }}</h1>
+                            <h2>Price: {{ meal.price|currency:'USD':'symbol' }}</h2>
+                            <p *ngIf="meal.isSpecial"> {{  'Special Meal' | uppercase }}</p>
+                            <h2>Category: {{ meal.category }}</h2>
+                        </div>
+                        <br/><br/>
+                        <p class="blackquote">{{ meal.description }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <a href="/menu" class="btn btn-outline-success ml-auto mb-5"><i class="fa fa-arrow-left"></i>  Back to list of meals</a>
+                </div>
+            </div>
+        </div>
+        <ng-template #no_meal>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="meal__details__no__exists d-flex flex-column justify-content-center mt-5">
+                            <h1>THE MEAL DOESN'T EXISTS</h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </main>

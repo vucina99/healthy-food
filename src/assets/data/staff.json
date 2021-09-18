@@ -1,0 +1,37 @@
+[
+    {
+        "id" : 1,
+        "image" : "/assets/images/staff/staff-01.jpg",
+        "name" : "Joe Gomez",
+        "profession": "personal chef",
+        "gender":"male"
+    },
+    {
+        "id" : 2,
+        "image" : "/assets/images/staff/staff-13.png",
+        "name" : "Ariana Moore",
+        "profession": "assistent of personal chef",
+        "gender":"female"
+    },
+    {
+        "id" : 3,
+        "image" : "/assets/images/staff/staff-03.jpg",
+        "name" : "Steve Thomas",
+        "profession": "pastry chef",
+        "gender":"male"
+    },
+    {
+        "id" : 4,
+        "image" : "/assets/images/staff/staff-04.png",
+        "name" : "Brad Cooper",
+        "profession": "sommelier",
+        "gender":"male"
+    },
+    {
+        "id" : 5,
+        "image" : "/assets/images/staff/staff-05.png",
+        "name" : "Clara Grande",
+        "profession": "short order cook",
+        "gender":"female"
+    }
+]

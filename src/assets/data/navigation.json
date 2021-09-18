@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 1,
+        "path" : "home",
+        "name" : "Home"
+    },
+    {
+        "id" : 2,
+        "path" : "about",
+        "name" : "About"
+    },
+    {
+        "id" : 3,
+        "path" : "menu",
+        "name" : "Menu"
+    },
+    {
+        "id" : 4,
+        "path" : "reservation",
+        "name" : "Reservation"
+    },
+    {
+        "id" : 5,
+        "path" : "contact",
+        "name" : "Contact"
+    }
+  ]

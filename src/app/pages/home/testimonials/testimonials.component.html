@@ -1,0 +1,27 @@
+<!-- Start Customer Reviews -->
+<div class="customer-reviews-box">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="heading-title text-center">
+                        <h2>Customer Reviews</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around" >
+                <div *ngFor="let review of reviews" class="col-md-3 col-sm-6 our-customers" >
+                        <img src="{{ review.image }}" class="img-fluid">
+                        <div class="customers-content">
+                            <h3 class="title">{{ review.name }}</h3>
+                            <span class="post">{{ review.profession }}</span>
+                            <p class="m-0 pt-3">{{ review.description }}</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- End Customer Reviews -->
